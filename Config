@@ -1,0 +1,7 @@
+
+config USER_APPS_HELLO_GST
+	bool "Gstreamer C example application"
+	default n
+	select FS_APPS_GSTREAMER
+	help
+	    Example Gstreamer application written in C.
