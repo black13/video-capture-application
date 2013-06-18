@@ -11,7 +11,7 @@ AUTOTOOLS_BUILD_DIR=src
 AUTOTOOLS_PARAMS = LDFLAGS="-Wl,--rpath-link -Wl,$(FSDEVROOT)/usr/lib:$(FSDEVROOT)/lib" --sysconfdir=$(FSDEVROOT)/etc
 
 # Name of the binary to install on the final fs
-BINARIES = /usr/bin/hello_gst
+BINARIES = /usr/bin/video_capture_application
 
 include ../../bsp/classes/rrsdk.class
 include $(CLASSES)/autotools.class

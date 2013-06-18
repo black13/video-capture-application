@@ -1,8 +1,8 @@
 ACLOCAL_AMFLAGS = -I m4
 
-bin_PROGRAMS = hello_gst
+bin_PROGRAMS = video_capture_application
 
-hello_gst_SOURCES = gstreamer.c
-hello_gst_CFLAGS = @GSTREAMER_CFLAGS@
-hello_gst_LDADD = @GSTREAMER_LIBS@
+video_capture_application_SOURCES = video_capture_application.c
+video_capture_application_CFLAGS = @GSTREAMER_CFLAGS@
+video_capture_application_LDADD = @GSTREAMER_LIBS@
 

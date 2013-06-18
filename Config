@@ -1,7 +1,7 @@
 
-config USER_APPS_HELLO_GST
-	bool "Gstreamer C example application"
+config USER_APPS_VIDEO_CAPTURE_APP
+	bool "Gstreamer C video capture application"
 	default n
 	select FS_APPS_GSTREAMER
 	help
-	    Example Gstreamer application written in C.
+	    Video capture example application written in C.

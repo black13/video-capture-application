@@ -142,6 +142,12 @@ int main (int   argc, char *argv[])
 	signal(SIGINT, intHandler);
 
 	loop = g_main_loop_new (NULL, FALSE);
+	
+	/* Check input arguments */
+	if (argc != 2) {
+		g_printerr ("Usage: %s <Recorded file name eg: test.h264>\n", argv[0]);
+		return -1;
+	}
 
 	/* Initialize elements */
 	if(factory_make(argv[1]) != 0)
